@@ -68,16 +68,39 @@
     <div class="container">
         <h2>Tonton & Unduh Video</h2>
         
-        <!-- PEMUTAR VIDEO (Embed XVideos) -->
+        <!-- PEMUTAR VIDEO (Acak Otomatis) -->
         <div class="video-container">
-            <iframe src="https://www.xvideos.com/embedframe/ihfihdb996e" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+            <iframe id="randomVideo" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
         </div>
 
-        <!-- TOMBOL DOWNLOAD (Terhubung ke Direct Link Adsterra Anda) -->
+        <!-- TOMBOL DOWNLOAD -->
         <a href="https://www.effectivecpmnetwork.com/xjjfq3wrkm?key=a1cedeea1cc672eab51161a859568d7c" target="_blank" class="btn-download">
             📥 Download Video (High Speed)
         </a>
     </div>
+
+    <!-- SCRIPT JAVASCRIPT UNTUK MENGACAK 10 VIDEO -->
+    <script>
+        const videoList = [
+            "https://www.xvideos.com/embedframe/ubodilf01f5",
+            "https://www.xvideos.com/embedframe/ubklaaf4598",
+            "https://www.xvideos.com/embedframe/itkkfab74dc",
+            "https://www.xvideos.com/embedframe/hfcehtm7d5b",
+            "https://www.xvideos.com/embedframe/kfiomok550c",
+            "https://www.xvideos.com/embedframe/uhvlebfe789",
+            "https://www.xvideos.com/embedframe/klltutvb1de",
+            "https://www.xvideos.com/embedframe/uehhiive069",
+            "https://www.xvideos.com/embedframe/uvubbok7000",
+            "https://www.xvideos.com/embedframe/ulciuuv9d73"
+        ];
+
+        function setRandomVideo() {
+            const randomIndex = Math.floor(Math.random() * videoList.length);
+            document.getElementById("randomVideo").src = videoList[randomIndex];
+        }
+
+        window.onload = setRandomVideo;
+    </script>
 
     <!-- SCRIPT IKLAN ADSTERRA (1 - Popunder / Social Bar) -->
     <script src="https://pl30677358.effectivecpmnetwork.com/5d/7f/da/5d7fdad8afc69f2390e0c95e4eea8dcd.js"></script>
